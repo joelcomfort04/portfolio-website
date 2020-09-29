@@ -1,0 +1,272 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+html{
+    scroll-behavior: smooth;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body{
+    font-family: 'Gafata', sans-serif;
+    color: black;
+}
+
+* {box-sizing: border-box;}
+
+.line-left{
+    border-left: 1px solid black;
+}
+.line-right{
+    border-right: 1px solid black;
+}
+.line-bottom{
+    border-bottom: 1px solid black;
+}
+
+.center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container-upper{
+    display: flex;
+    width: 100%;
+    height: 25%;
+}
+.bottom-right{
+    bottom:0;
+    right:0;
+}
+
+.container-cta{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: end;
+    
+}
+.container-cta-blank{
+    font-size: 40px;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    
+}
+.container-middle{
+    display: flex;
+    width: 100%;
+    height: 35%;
+}
+.container-name{
+    width: 80.5%;
+    height: 35vh;
+}
+.container-name p{
+    
+    font-size: 70px;
+}
+.container-name-blank{
+    position: relative;
+    width: 20vw;
+    font-size: 40px;
+    height: 35vh;
+
+}
+.container-bottom{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 35vh;
+
+}
+.container-bottom-blank{
+    position: relative;
+    font-size: 40px;
+    height: 100%;
+    width: 50%;
+}
+.container-content{
+    width: 100%;
+    height: 50%;
+}
+
+.hover-change:hover{
+    background-color: #FF4F59;
+    cursor: pointer;
+    -webkit-transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+}
+.hover-change-no-point:hover{
+    background-color: #FF4F59;
+    -webkit-transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+}
+.name:hover{
+    cursor: default;
+}
+.container-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 225vh;
+
+}
+
+#about-content{
+    background-color: #FF4F59;
+    display: flex;
+    color: black;
+    overflow-y:auto
+    
+}
+
+#about-text{
+    font-size: 50px;
+    margin-top: 28vh;
+    margin-bottom: 28vh;
+}
+
+
+#projects-content{
+    background-color: #B2E0DF;
+    display: flex;
+    
+    
+}
+.project{
+    width: 75vh;
+    height: 75vh;
+    background-color: #B2E0DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img{
+    border-style: solid;
+    border-radius: 1px;
+    border-color: #FF4F59;
+    height: 400px;
+    width: 350px;
+}
+
+.project-img:hover{
+    filter: blur(4px);
+}
+.project-cta{
+    z-index: 1;
+}
+
+
+
+#resume-content{
+    background-color: #B2E0DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resume-img{
+    height: 250px;
+    width: 200px;
+    
+}
+
+#git-img{
+    margin-left: 100px;
+    height: 250px;
+    width: 250px;
+}
+
+
+.main-content{
+    width: 100%;
+    height: 75vh;
+}
+
+
+
+@media only screen and (max-width: 1125px){
+    #projects-content {
+      flex-direction: column;
+      overflow-y:auto;
+    }
+    .project{
+        width: 100%;
+        height: 300px;
+        border: hidden;
+        margin-top: 5px;
+    }
+
+    .project-img{
+        width: 200px;
+        height: 200px;
+    }
+    #about-text{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 120px
+    }
+    .container-name p {
+        font-size: 40px;
+    }
+    .container-name-blank {
+        font-size: 20px;
+        
+    }
+    .container-cta-blank {
+        font-size: 30px;
+    }
+    .container-bottom-blank{
+        font-size: 30px;
+    }
+
+    #resume-img{
+        height: 150px;
+        width: 135px;
+        
+    }
+    #git-img{
+        height: 150px;
+        width: 135px;
+    }
+    
+  }
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+   
+
+
